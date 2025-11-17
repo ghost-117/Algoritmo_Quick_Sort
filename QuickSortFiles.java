@@ -13,7 +13,7 @@ public class QuickSortFiles{
         int numLines = 0;
 
         try{
-            file = new File("C:\\archivos\\" + fileName);
+            file = new File("C:\\Archivos\\" + fileName);
             reader = new FileReader(file);
             bufer = new BufferedReader(reader);
             while ( (bufer.readLine()) != null ){
@@ -70,7 +70,7 @@ public class QuickSortFiles{
         try{
             t = countFileLines(fileName);
             array = new int[t];
-            file = new File("C:\\archivos\\" + fileName);
+            file = new File("C:\\Archivos\\" + fileName);
             reader = new FileReader(file);
             bufer = new BufferedReader(reader);
             
@@ -91,7 +91,7 @@ public class QuickSortFiles{
         PrintWriter writer;
         
         try{
-            file = new FileWriter("c:\\archivos\\" + fileName);
+            file = new FileWriter("c:\\Archivos\\" + fileName);
             writer = new PrintWriter(file);
             for ( int unDato : array )
                 writer.println(unDato);
